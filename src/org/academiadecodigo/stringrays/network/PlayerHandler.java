@@ -33,7 +33,9 @@ public class PlayerHandler implements Runnable {
     public void run() {
         init();
         chooseNickname();
-        askIfReady();
+        //askIfReady();
+        decipherStartMenu();
+
         while (!Thread.currentThread().isInterrupted()) {
             waitingForInstructions();
         }
@@ -105,6 +107,37 @@ public class PlayerHandler implements Runnable {
 
         server.gameReady();
     }
+
+
+    public int startMenu(){
+
+        String[] options = {"START GAME", "FIND ROOM"};
+
+        MenuInputScanner scanner = new MenuInputScanner(options);
+
+        scanner.setMessage(Messages.LOGIN_WELCOME);
+
+        scanner.setError("Select a valid option");
+
+        return prompt.getUserInput(scanner);
+    }
+
+    public void decipherStartMenu(){
+
+        int choice = startMenu();
+
+        if (choice == 1) {
+            askIfReady();}
+
+        if (choice == 2 ) {
+            server.broadcastMessage(player.getNickname() + " is ready!");
+            server.gameReady();
+        }
+
+    }
+
+
+
 
     private void chooseWhiteCard() {
 
