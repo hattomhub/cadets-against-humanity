@@ -149,7 +149,7 @@ public class PlayerHandler implements Runnable {
         out.println(Colors.BG_BLACK + Colors.WHITE + "\n\t" + " Black Card: " + server.getGame().getBlackCard().getMessage() + Colors.BG_RESET + Colors.RESET + "\n");
 
         for (String cardMessage : server.getGame().getCzarHand().getCardMessages()) {
-            out.println("White Card: " + cardMessage);
+            out.println(Colors.BG_WHITE + Colors.BLACK + " White Card: " + cardMessage + Colors.BG_RESET + Colors.RESET);
         }
 
     }
