@@ -18,7 +18,7 @@ Java, IntelliJ, Linux, Mac OS, Google Slides, Prompt-View Library, Maven, Git, K
 ## Authors
 
 * **Bernardo Telo** - [Chickenwithoutwing](https://github.com/Chickenwithoutwing)
-* **João Madeira** - [hattomhub](https://github.com/jpmmadeira)
+* **João Madeira** - [jpmmadeira](https://github.com/jpmmadeira)
 * **Josué Almeida** - [z3ux](https://github.com/z3ux)
 * **Ricardo Santos** - [ricardosantos](https://github.com/ricardosantos96)
 * **Ruben Brandão** - [rvbrd](https://github.com/rvbrd)
